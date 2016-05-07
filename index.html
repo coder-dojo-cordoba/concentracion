@@ -1,7 +1,7 @@
 <!DOCTYPE HTML>
 <html>
 	<head>
-		<title>PIXI Concentration</title>
+		<title>Juego de Concentracion :: PIXI</title>
 		<style>
 			body {
 				margin: 0;
@@ -12,15 +12,15 @@
 	</head>
 	<body>
 		<script>
-			// first tile picked up by the player
+			// primera pieza elegida por el jugador
 			var firstTile=null;
-			// second tile picked up by the player
+			// segunda pieza elegida por el jugador
 			var secondTile=null;
-			// can the player pick up a tile?
+			// puede el jugador elegir una pieza?
 			var canPick=true;
-			// create an new instance of a pixi stage with a grey background
+			// crear una instancia de escenario (stage) pixi, con un fondo color gris
 			var stage = new PIXI.Stage(0x888888);
-			// create a renderer instance width=640 height=480
+			// crear una instancia de renderer: ancho=640 alto=480
 			var renderer = PIXI.autoDetectRenderer(640,480);
 			// importing a texture atlas created with texturepacker
 			var tileAtlas = ["images.json"];
